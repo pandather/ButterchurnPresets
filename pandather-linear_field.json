@@ -1,0 +1,200 @@
+{
+    "version": 2,
+    "baseVals": {
+      "rating": 5,
+
+      "gammaadj": 1.32,
+      "decay": 0.971,
+      "echo_zoom": 0.9977,
+      "echo_alpha": 0.34,
+      "echo_orient": 1,
+
+      "wave_mode": 6,
+      "additivewave": 1,
+      "wave_dots": 0,
+      "wave_thick": 1,
+      "modwavealphabyvolume": 1,
+      "wave_brighten": 0,
+      "darken": 1,
+      "brighten": 0,
+
+      "wave_a": 1.65,
+      "wave_scale": 1.18,
+      "wave_smoothing": 0.82,
+      "modwavealphastart": 0.58,
+      "modwavealphaend": 1.18,
+
+      "fshader": 1,
+      "warpscale": 0.68,
+      "warpanimspeed": 0.26,
+      "zoom": 1.00055,
+      "zoomexp": 0.75,
+      "rot": 0.00015,
+      "warp": 0.0045,
+      "sx": 1,
+      "sy": 1,
+
+      "wave_r": 0.75,
+      "wave_g": 0.85,
+      "wave_b": 1.0,
+      "wave_x": 0.5,
+      "wave_y": 0.5,
+
+      "ob_size": 0.012,
+      "ob_r": 0.025,
+      "ob_g": 0.035,
+      "ob_b": 0.055,
+      "ob_a": 0.65,
+
+      "ib_size": 0.006,
+      "ib_r": 0.0,
+      "ib_g": 0.0,
+      "ib_b": 0.0,
+      "ib_a": 0.72,
+
+      "mv_x": 64,
+      "mv_y": 32,
+      "mv_l": 1,
+      "mv_r": 0.12,
+      "mv_g": 0.16,
+      "mv_b": 0.22,
+      "mv_a": 0.055
+    },
+
+    "shapes": [
+      {
+        "baseVals": {
+          "enabled": 0
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": ""
+      },
+      {
+        "baseVals": {
+          "enabled": 0
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": ""
+      },
+      {
+        "baseVals": {
+          "enabled": 0
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": ""
+      },
+      {
+        "baseVals": {
+          "enabled": 0
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": ""
+      }
+    ],
+
+    "waves": [
+      {
+        "baseVals": {
+          "enabled": 1,
+          "samples": 768,
+          "sep": 0,
+          "spectrum": 0,
+          "usedots": 0,
+          "thick": 1,
+          "additive": 1,
+          "scaling": 0.72,
+          "smoothing": 0.86,
+          "r": 0.8,
+          "g": 0.9,
+          "b": 1.0,
+          "a": 0.22
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "a.r=.55+.45*a.q1;a.g=.55+.45*a.q2;a.b=.55+.45*a.q3;a.a=.09+.16*a.q4;",
+        "point_eqs_str": "a.x=a.sample;a.y=.50+a.value1*(.025+.065*a.q4)+.018*Math.sin(6.283*a.sample+a.q8);a.a=.10+.18*a.q4;",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": "r=.55+.45*q1;g=.55+.45*q2;b=.55+.45*q3;a=.09+.16*q4;",
+        "point_eqs_eel": "x=sample;y=.50+value1*(.025+.065*q4)+.018*sin(6.283*sample+q8);a=.10+.18*q4;"
+      },
+      {
+        "baseVals": {
+          "enabled": 1,
+          "samples": 768,
+          "sep": 0,
+          "spectrum": 0,
+          "usedots": 0,
+          "thick": 1,
+          "additive": 1,
+          "scaling": 0.54,
+          "smoothing": 0.9,
+          "r": 1.0,
+          "g": 0.6,
+          "b": 0.85,
+          "a": 0.16
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "a.r=.45+.55*a.q2;a.g=.45+.55*a.q3;a.b=.45+.55*a.q1;a.a=.07+.12*a.q4;",
+        "point_eqs_str": "a.x=a.sample;a.y=.28+.20*a.sample+a.value2*(.018+.04*a.q4)+.013*Math.sin(9.424*a.sample-.65*a.q8);a.a=.07+.14*a.q4;",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": "r=.45+.55*q2;g=.45+.55*q3;b=.45+.55*q1;a=.07+.12*q4;",
+        "point_eqs_eel": "x=sample;y=.28+.20*sample+value2*(.018+.04*q4)+.013*sin(9.424*sample-.65*q8);a=.07+.14*q4;"
+      },
+      {
+        "baseVals": {
+          "enabled": 1,
+          "samples": 768,
+          "sep": 0,
+          "spectrum": 0,
+          "usedots": 0,
+          "thick": 1,
+          "additive": 1,
+          "scaling": 0.50,
+          "smoothing": 0.9,
+          "r": 0.55,
+          "g": 1.0,
+          "b": 0.75,
+          "a": 0.14
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "a.r=.45+.55*a.q3;a.g=.45+.55*a.q1;a.b=.45+.55*a.q2;a.a=.06+.11*a.q4;",
+        "point_eqs_str": "a.x=a.sample;a.y=.72-.18*a.sample+a.value1*(.016+.038*a.q4)+.012*Math.sin(9.424*a.sample+.45*a.q8);a.a=.06+.13*a.q4;",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": "r=.45+.55*q3;g=.45+.55*q1;b=.45+.55*q2;a=.06+.11*q4;",
+        "point_eqs_eel": "x=sample;y=.72-.18*sample+value1*(.016+.038*q4)+.012*sin(9.424*sample+.45*q8);a=.06+.13*q4;"
+      },
+      {
+        "baseVals": {
+          "enabled": 0
+        },
+        "init_eqs_str": "",
+        "frame_eqs_str": "",
+        "point_eqs_str": "",
+        "init_eqs_eel": "",
+        "frame_eqs_eel": "",
+        "point_eqs_eel": ""
+      }
+    ],
+
+    "init_eqs_str": "a.energy=0;a.low=0;a.midlow=0;a.air=0;a.hue=0;a.breath=0;a.q1=.5;a.q2=.5;a.q3=.5;a.q4=0;a.q5=0;a.q6=0;a.q7=0;a.q8=0;",
+    "frame_eqs_str": "a.low=.985*a.low+.015*a.bass_att;a.midlow=.988*a.midlow+.012*a.mid_att;a.air=.992*a.air+.008*a.treb_att;a.energy=.972*a.energy+.018*(.55*a.bass_att+.35*a.mid_att+.20*a.treb_att);a.q4=Math.min(.42*a.energy,1);a.breath=.996*a.breath+.004*(.6+.4*a.midlow);a.hue+=.0028+.0032*a.q4+.001*a.air;a.q8=a.hue*6.283;a.q1=.5+.5*Math.sin(a.q8);a.q2=.5+.5*Math.sin(a.q8+2.094);a.q3=.5+.5*Math.sin(a.q8+4.188);a.q5=.5+.5*Math.sin(.019*a.time+.35*a.q8);a.q6=Math.sin(.027*a.time+.18*a.q8);a.q7=Math.cos(.023*a.time-.21*a.q8);a.wave_r=.35+.65*a.q1;a.wave_g=.35+.65*a.q2;a.wave_b=.35+.65*a.q3;a.wave_x=.5+.05*Math.sin(.041*a.time+.2*a.q8);a.wave_y=.5+.045*Math.cos(.037*a.time-.25*a.q8);a.zoom=1.00025+.00065*a.q4+.00018*Math.sin(.013*a.time);a.rot+=.00012*Math.sin(.017*a.time)+.00010*(a.midlow-a.air);a.warp=.0025+.0065*a.q4;a.decay=.970+.010*below(a.q4,.28);a.sx=1+.0015*Math.sin(.031*a.time+a.q8);a.sy=1+.0010*Math.cos(.029*a.time-a.q8);a.ib_r=.10*a.q1;a.ib_g=.10*a.q2;a.ib_b=.10*a.q3;a.ob_r=.045+.10*a.q1;a.ob_g=.045+.10*a.q2;a.ob_b=.045+.10*a.q3;a.mv_r=.06+.12*a.q1;a.mv_g=.06+.12*a.q2;a.mv_b=.06+.12*a.q3;",
+    "pixel_eqs_str": "a.angle=.18*Math.asin(1)+.22*Math.sin(.011*a.time+.11*a.q8);a.xc=(a.x-.5)*a.aspectx;a.yc=(a.y-.5)*a.aspecty;a.xr=Math.cos(-a.angle)*a.xc-Math.sin(-a.angle)*a.yc;a.yr=Math.sin(-a.angle)*a.xc+Math.cos(-a.angle)*a.yc;a.field1=Math.sin(a.yr*(9+4*a.q4)+.42*a.q8);a.field2=Math.sin((a.xr+a.yr)*(7+3*a.q4)-.31*a.q8);a.field3=Math.cos((a.xr-a.yr)*(5+2*a.q4)+.19*a.q8);a.dx+=.00052*a.field1+.00028*a.field2*a.q4+.00014*a.field3*a.low;a.dy+=.00042*a.field2-.00025*a.field1*a.q4+.00014*a.field3*a.air;a.sx+=.0011*Math.sin(a.y*10+a.q8)*a.q4;a.sy+=.0010*Math.sin(a.x*9-a.q8)*a.q4;",
+    "init_eqs_eel": "energy=0;low=0;midlow=0;air=0;hue=0;breath=0;q1=.5;q2=.5;q3=.5;q4=0;q5=0;q6=0;q7=0;q8=0;",
+    "frame_eqs_eel": "low=.985*low+.015*bass_att;\nmidlow=.988*midlow+.012*mid_att;\nair=.992*air+.008*treb_att;\nenergy=.972*energy+.018*(.55*bass_att+.35*mid_att+.20*treb_att);\nq4=min(.42*energy,1);\nbreath=.996*breath+.004*(.6+.4*midlow);\nhue=hue+.0028+.0032*q4+.001*air;\nq8=hue*6.283;\nq1=.5+.5*sin(q8);\nq2=.5+.5*sin(q8+2.094);\nq3=.5+.5*sin(q8+4.188);\nq5=.5+.5*sin(.019*time+.35*q8);\nq6=sin(.027*time+.18*q8);\nq7=cos(.023*time-.21*q8);\nwave_r=.35+.65*q1;\nwave_g=.35+.65*q2;\nwave_b=.35+.65*q3;\nwave_x=.5+.05*sin(.041*time+.2*q8);\nwave_y=.5+.045*cos(.037*time-.25*q8);\nzoom=1.00025+.00065*q4+.00018*sin(.013*time);\nrot=rot+.00012*sin(.017*time)+.00010*(midlow-air);\nwarp=.0025+.0065*q4;\ndecay=.970+.010*below(q4,.28);\nsx=1+.0015*sin(.031*time+q8);\nsy=1+.0010*cos(.029*time-q8);\nib_r=.10*q1;ib_g=.10*q2;ib_b=.10*q3;\nob_r=.045+.10*q1;ob_g=.045+.10*q2;ob_b=.045+.10*q3;\nmv_r=.06+.12*q1;mv_g=.06+.12*q2;mv_b=.06+.12*q3;",
+    "pixel_eqs_eel": "angle=.18*asin(1)+.22*sin(.011*time+.11*q8);\nxc=(x-.5)*aspectx;\nyc=(y-.5)*aspecty;\nxr=cos(-angle)*xc-sin(-angle)*yc;\nyr=sin(-angle)*xc+cos(-angle)*yc;\nfield1=sin(yr*(9+4*q4)+.42*q8);\nfield2=sin((xr+yr)*(7+3*q4)-.31*q8);\nfield3=cos((xr-yr)*(5+2*q4)+.19*q8);\ndx=dx+.00052*field1+.00028*field2*q4+.00014*field3*low;\ndy=dy+.00042*field2-.00025*field1*q4+.00014*field3*air;\nsx=sx+.0011*sin(y*10+q8)*q4;\nsy=sy+.0010*sin(x*9-q8)*q4;",
+
+    "warp": " shader_body { \n  float energy_1;\n  energy_1 = clamp(q4, 0.0, 1.0);\n  vec2 p_1;\n  p_1 = ((uv_orig * 2.0) - 1.0);\n  vec2 flow_1;\n  flow_1.x = sin((p_1.y * 6.0) + (q8 * 0.37));\n  flow_1.y = cos(((p_1.x + p_1.y) * 4.5) - (q8 * 0.29));\n  flow_1 = flow_1 * texsize.zw * (1.2 + (energy_1 * 6.0));\n  vec3 prev_1;\n  prev_1 = texture(sampler_main, uv + flow_1).xyz;\n  vec3 blur_1;\n  blur_1 = ((texture(sampler_blur1, uv).xyz * scale1) + bias1);\n  vec3 ret_1;\n  ret_1 = mix(prev_1, blur_1, 0.035 + (0.045 * energy_1));\n  ret_1 = ret_1 - (0.0038 + (0.002 * energy_1));\n  ret = ret_1;\n }",
+
+    "comp": " shader_body { \n  float energy_1;\n  energy_1 = clamp(q4, 0.0, 1.0);\n  vec2 p_1;\n  p_1 = uv_orig;\n\n  vec3 feedback_1;\n  feedback_1 = texture(sampler_main, uv).xyz;\n  vec3 blur_1;\n  blur_1 = ((texture(sampler_blur1, uv).xyz * scale1) + bias1);\n  vec3 blur_2;\n  blur_2 = ((texture(sampler_blur2, uv).xyz * scale2) + bias2);\n  vec3 blur_3;\n  blur_3 = ((texture(sampler_blur3, uv).xyz * scale3) + bias3);\n\n  vec3 base_1;\n  base_1 = (feedback_1 * 0.64) + (blur_1 * 0.22) + (blur_2 * 0.10) + (blur_3 * 0.08);\n\n  float drift_1;\n  drift_1 = q8 * 0.010;\n\n  float band_a_1;\n  band_a_1 = 0.5 + 0.5 * sin((p_1.y * 7.0) + (p_1.x * 0.6) + drift_1);\n  float band_b_1;\n  band_b_1 = 0.5 + 0.5 * sin((p_1.x * 4.3) - (p_1.y * 2.2) - drift_1 * 0.72);\n  float band_c_1;\n  band_c_1 = 0.5 + 0.5 * cos(((p_1.x + p_1.y) * 3.4) + sin(p_1.x * 6.28318 + q8 * 0.18) * 0.18);\n\n  float pressure_1;\n  pressure_1 = (band_a_1 * 0.45) + (band_b_1 * 0.35) + (band_c_1 * 0.20);\n  pressure_1 = smoothstep(0.12, 0.88, pressure_1);\n\n  vec2 soft_offset_1;\n  soft_offset_1.x = (band_b_1 - 0.5) * texsize.z;\n  soft_offset_1.y = (band_c_1 - 0.5) * texsize.w;\n  soft_offset_1 = soft_offset_1 * (1.5 + energy_1 * 5.0);\n\n  vec3 drift_sample_1;\n  drift_sample_1 = texture(sampler_main, uv + soft_offset_1).xyz;\n  base_1 = mix(base_1, drift_sample_1, 0.12 + energy_1 * 0.08);\n\n  vec3 color_1;\n  color_1 = vec3(q1, q2, q3);\n  vec3 color_2;\n  color_2 = vec3(q2, q3, q1);\n  vec3 color_3;\n  color_3 = vec3(q3, q1, q2);\n\n  vec3 tint_1;\n  tint_1 = mix(color_1, color_2, band_b_1);\n  tint_1 = mix(tint_1, color_3, band_c_1 * 0.35);\n\n  vec3 field_1;\n  field_1 = base_1;\n\n  field_1 = mix(field_1, field_1 * (0.78 + tint_1 * 0.46), 0.20 + energy_1 * 0.10);\n  field_1 += tint_1 * pressure_1 * (0.045 + energy_1 * 0.055);\n\n  float gray_1;\n  gray_1 = dot(field_1, vec3(0.3333, 0.3333, 0.3333));\n  field_1 = mix(vec3(gray_1), field_1, 1.06 + energy_1 * 0.22);\n\n  vec2 center_1;\n  center_1 = p_1 - vec2(0.5, 0.5);\n  float vignette_1;\n  vignette_1 = 1.0 - dot(center_1, center_1) * 0.30;\n  field_1 = field_1 * (0.86 + energy_1 * 0.12) * vignette_1;\n\n  float max_channel_1;\n  max_channel_1 = max(max(field_1.r, field_1.g), field_1.b);\n  float limiter_1;\n  limiter_1 = 1.0 / (1.0 + max(0.0, max_channel_1 - 0.78) * 1.85);\n  field_1 = field_1 * limiter_1;\n\n  ret = clamp(field_1, 0.0, 0.94);\n }",
+
+    "warp_hlsl": "shader_body\n{\n    float energy = saturate(q4);\n    float2 p = uv_orig*2-1;\n    float2 flow;\n    flow.x = sin(p.y*6 + q8*0.37);\n    flow.y = cos((p.x+p.y)*4.5 - q8*0.29);\n    flow *= texsize.zw*(1.2+energy*6);\n    float3 prev = tex2D(sampler_main, uv+flow).xyz;\n    float3 blur = GetBlur1(uv);\n    ret = lerp(prev, blur, 0.035+0.045*energy);\n    ret -= 0.0038+0.002*energy;\n}",
+
+    "comp_hlsl": "shader_body\n{\n    float energy = saturate(q4);\n    float2 p = uv_orig;\n\n    float3 feedback = tex2D(sampler_main, uv).xyz;\n    float3 blur1 = GetBlur1(uv);\n    float3 blur2 = GetBlur2(uv);\n    float3 blur3 = GetBlur3(uv);\n\n    float3 base = feedback*0.64 + blur1*0.22 + blur2*0.10 + blur3*0.08;\n\n    float drift = q8*0.010;\n\n    float bandA = 0.5 + 0.5*sin(p.y*7.0 + p.x*0.6 + drift);\n    float bandB = 0.5 + 0.5*sin(p.x*4.3 - p.y*2.2 - drift*0.72);\n    float bandC = 0.5 + 0.5*cos((p.x+p.y)*3.4 + sin(p.x*6.28318 + q8*0.18)*0.18);\n\n    float pressure = bandA*0.45 + bandB*0.35 + bandC*0.20;\n    pressure = smoothstep(0.12,0.88,pressure);\n\n    float2 softOffset;\n    softOffset.x = (bandB-0.5)*texsize.z;\n    softOffset.y = (bandC-0.5)*texsize.w;\n    softOffset *= 1.5 + energy*5.0;\n\n    float3 driftSample = tex2D(sampler_main, uv + softOffset).xyz;\n    base = lerp(base, driftSample, 0.12 + energy*0.08);\n\n    float3 c1 = float3(q1,q2,q3);\n    float3 c2 = float3(q2,q3,q1);\n    float3 c3 = float3(q3,q1,q2);\n\n    float3 tint = lerp(c1, c2, bandB);\n    tint = lerp(tint, c3, bandC*0.35);\n\n    float3 field = base;\n    field = lerp(field, field*(0.78 + tint*0.46), 0.20 + energy*0.10);\n    field += tint * pressure * (0.045 + energy*0.055);\n\n    float gray = dot(field, float3(0.3333,0.3333,0.3333));\n    field = lerp(gray, field, 1.06 + energy*0.22);\n\n    float2 center = p - float2(0.5,0.5);\n    float vignette = 1.0 - dot(center,center)*0.30;\n    field *= (0.86 + energy*0.12) * vignette;\n\n    float maxChannel = max(max(field.r, field.g), field.b);\n    float limiter = 1.0 / (1.0 + max(0.0, maxChannel - 0.78)*1.85);\n    field *= limiter;\n\n    ret = clamp(field, 0.0, 0.94);\n}"
+}
